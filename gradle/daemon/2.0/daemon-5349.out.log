@@ -1,0 +1,352 @@
+17:34:26.092 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=1e031471-b54a-4d37-ab3f-03fd7fcfe72e,javaHome=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home,daemonRegistryDir=/Users/sowmyavi/.gradle/daemon,pid=5349,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+17:34:26.097 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1436529866097
+17:34:26.112 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface en1
+17:34:26.113 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? false
+17:34:26.113 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+17:34:26.114 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /fe80:0:0:0:7256:81ff:fe8e:2b25%5
+17:34:26.114 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /10.12.21.97
+17:34:26.116 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote multicast interface en1
+17:34:26.116 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface lo0
+17:34:26.117 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? true
+17:34:26.117 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+17:34:26.118 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Ignoring remote address on loopback interface /fe80:0:0:0:0:0:0:1%1
+17:34:26.118 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /0:0:0:0:0:0:0:1
+17:34:26.119 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /127.0.0.1
+17:34:26.119 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback multicast interface lo0
+17:34:26.121 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Listening on [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]].
+17:34:26.124 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Fri Jul 10 17:34:26 IST 2015, with address: [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:34:26.124 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertising the daemon address to the clients: [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:34:26.125 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=1e031471-b54a-4d37-ab3f-03fd7fcfe72e,javaHome=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home,daemonRegistryDir=/Users/sowmyavi/.gradle/daemon,pid=5349,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+17:34:26.126 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], context: DefaultDaemonContext[uid=1e031471-b54a-4d37-ab3f-03fd7fcfe72e,javaHome=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home,daemonRegistryDir=/Users/sowmyavi/.gradle/daemon,pid=5349,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+17:34:26.137 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:34:26.143 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:34:26.184 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:34:26.186 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+17:34:26.187 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+17:34:26.189 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] requestStopOnIdleTimeout(10800000 MILLISECONDS) called on daemon
+17:34:26.190 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] waiting for daemon to stop or be idle for 10800000ms
+17:34:26.192 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Fri Jul 10 20:34:26 IST 2015
+17:34:26.199 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59330 to /127.0.0.1:59329.
+17:34:26.250 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.Build
+17:34:26.251 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=aa767966-a57d-4621-a872-45d3947172c6.1, currentDir=/Users/sowmyavi/twu44proj4}
+17:34:26.251 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=aa767966-a57d-4621-a872-45d3947172c6.1, currentDir=/Users/sowmyavi/twu44proj4}.
+17:34:26.252 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=aa767966-a57d-4621-a872-45d3947172c6.1, currentDir=/Users/sowmyavi/twu44proj4} with connection: socket connection at /127.0.0.1:59329 with /127.0.0.1:59330.
+17:34:26.262 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=aa767966-a57d-4621-a872-45d3947172c6.1, currentDir=/Users/sowmyavi/twu44proj4}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@56377813]) called after 0.0 minutes of idle
+17:34:26.263 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:34:26.264 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:34:26.266 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:34:26.267 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:34:26.274 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:34:26.275 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1436529866275
+17:34:26.276 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:34:26.276 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=aa767966-a57d-4621-a872-45d3947172c6.1, currentDir=/Users/sowmyavi/twu44proj4}. Dispatching build started information...
+17:34:26.278 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+17:34:26.285 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {SHELL=/bin/zsh, HOME=/Users/sowmyavi, TMPDIR=/var/folders/cn/y6_hhyyn4s717jg8lqgdkc5m0000gp/T/, LOGNAME=sowmyavi, Apple_PubSub_Socket_Render=/tmp/launch-Re2rG4/Render, __CF_USER_TEXT_ENCODING=0x1F6:0:0, PATH=/usr/bin:/bin:/usr/sbin:/sbin, SSH_AUTH_SOCK=/tmp/launch-eWCkhO/Listeners, __CHECKFIX1436934=1, USER=sowmyavi}
+17:34:26.293 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.CloseInput
+17:34:26.293 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=aa767966-a57d-4621-a872-45d3947172c6.2]
+17:34:26.304 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+17:34:26.305 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5349). The daemon log file: /Users/sowmyavi/.gradle/daemon/2.0/daemon-5349.out.log
+17:34:26.308 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+17:34:26.308 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+17:34:26.312 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=1e031471-b54a-4d37-ab3f-03fd7fcfe72e,javaHome=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home,daemonRegistryDir=/Users/sowmyavi/.gradle/daemon,pid=5349,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+17:34:26.956 [DEBUG] [org.gradle.internal.resource.transport.http.JavaSystemPropertiesHttpProxySettings] Found java system property 'http.nonProxyHosts': local|*.local|169.254/16|*.169.254/16. Will ignore proxy settings for these hosts.
+:cleanTest
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test
+
+<ijLog><event type='reportLocation' testReport='/Users/sowmyavi/twu44proj4/build/reports/tests/index.html' /></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='root' parentId=''><ijLogEol/>
+    <descriptor name='Test Run' className='' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+objc[5354]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java and /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will be used. Which one is undefined.
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.1' parentId='root'><ijLogEol/>
+    <descriptor name='Gradle Test Executor 1' className='' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.2' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.model.AccountTest' className='com.trailblazers.freewheelers.model.AccountTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.2' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.model.AccountTest' className='com.trailblazers.freewheelers.model.AccountTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878319' endTime='1436529878467'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.3' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.model.AccountValidationTest' className='com.trailblazers.freewheelers.model.AccountValidationTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.3' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.model.AccountValidationTest' className='com.trailblazers.freewheelers.model.AccountValidationTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878494' endTime='1436529878505'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.4' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.model.ItemValidationTest' className='com.trailblazers.freewheelers.model.ItemValidationTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.4' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.model.ItemValidationTest' className='com.trailblazers.freewheelers.model.ItemValidationTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878505' endTime='1436529878515'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.5' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.ServiceResultTest' className='com.trailblazers.freewheelers.service.ServiceResultTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.5' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.ServiceResultTest' className='com.trailblazers.freewheelers.service.ServiceResultTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878515' endTime='1436529878518'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.6' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.SurveyServiceTest' className='com.trailblazers.freewheelers.service.SurveyServiceTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.6' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.SurveyServiceTest' className='com.trailblazers.freewheelers.service.SurveyServiceTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878518' endTime='1436529878617'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.7' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.impl.AccountServiceImplTest' className='com.trailblazers.freewheelers.service.impl.AccountServiceImplTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.7' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.impl.AccountServiceImplTest' className='com.trailblazers.freewheelers.service.impl.AccountServiceImplTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878617' endTime='1436529878625'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.8' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.impl.ItemServiceImplTest' className='com.trailblazers.freewheelers.service.impl.ItemServiceImplTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.8' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.impl.ItemServiceImplTest' className='com.trailblazers.freewheelers.service.impl.ItemServiceImplTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878625' endTime='1436529878632'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.9' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.impl.OrderServiceImplTest' className='com.trailblazers.freewheelers.service.impl.OrderServiceImplTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.9' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.service.impl.OrderServiceImplTest' className='com.trailblazers.freewheelers.service.impl.OrderServiceImplTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878632' endTime='1436529878638'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.10' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.AccountControllerTest' className='com.trailblazers.freewheelers.web.AccountControllerTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.10' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.AccountControllerTest' className='com.trailblazers.freewheelers.web.AccountControllerTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878638' endTime='1436529878650'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.11' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.ItemControllerTest' className='com.trailblazers.freewheelers.web.ItemControllerTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.11' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.ItemControllerTest' className='com.trailblazers.freewheelers.web.ItemControllerTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878650' endTime='1436529878665'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.12' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.OrderControllerTest' className='com.trailblazers.freewheelers.web.OrderControllerTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.12' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.OrderControllerTest' className='com.trailblazers.freewheelers.web.OrderControllerTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878665' endTime='1436529878671'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.13' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.ShoppingCartControllerTest' className='com.trailblazers.freewheelers.web.ShoppingCartControllerTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeTest'><ijLogEol/>
+  <test id='1.14' parentId='1.13'><ijLogEol/>
+    <descriptor name='shouldRemoveItemsFromCart' className='com.trailblazers.freewheelers.web.ShoppingCartControllerTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterTest'><ijLogEol/>
+  <test id='1.14' parentId='1.13'><ijLogEol/>
+    <descriptor name='shouldRemoveItemsFromCart' className='com.trailblazers.freewheelers.web.ShoppingCartControllerTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878713' endTime='1436529880239'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.13' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.ShoppingCartControllerTest' className='com.trailblazers.freewheelers.web.ShoppingCartControllerTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878671' endTime='1436529880239'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='beforeSuite'><ijLogEol/>
+  <test id='1.15' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.SurveyControllerTest' className='com.trailblazers.freewheelers.web.SurveyControllerTest' /><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.15' parentId='1.1'><ijLogEol/>
+    <descriptor name='com.trailblazers.freewheelers.web.SurveyControllerTest' className='com.trailblazers.freewheelers.web.SurveyControllerTest' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529880239' endTime='1436529880265'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='1.1' parentId='root'><ijLogEol/>
+    <descriptor name='Gradle Test Executor 1' className='' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529878300' endTime='1436529880265'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+
+<ijLog><event type='afterSuite'><ijLogEol/>
+  <test id='root' parentId=''><ijLogEol/>
+    <descriptor name='Test Run' className='' /><ijLogEol/>
+    <result resultType='SUCCESS' startTime='1436529876834' endTime='1436529880327'><ijLogEol/>
+      <failureType>error</failureType><ijLogEol/>
+    </result><ijLogEol/>
+  </test><ijLogEol/>
+</event></ijLog>
+:jacocoTestReport
+:checkTestCoverage
+
+BUILD SUCCESSFUL
+
+Total time: 16.664 secs
+17:34:41.627 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory workerMain (/Users/sowmyavi/.gradle/caches/2.0/workerMain).
+17:34:41.631 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/Users/sowmyavi/.gradle/caches/modules-2/metadata-2.12/module-metadata.bin)
+17:34:41.631 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/Users/sowmyavi/.gradle/caches/modules-2/metadata-2.12/artifact-at-repository.bin)
+17:34:41.632 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/Users/sowmyavi/.gradle/caches/modules-2).
+17:34:41.633 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on initscript class cache for initialization script '/private/var/folders/cn/y6_hhyyn4s717jg8lqgdkc5m0000gp/T/ijinit1.gradle' (/Users/sowmyavi/.gradle/caches/2.0/scripts/ijinit1_27f3j9d46utuoi1f300g2q3uem/InitScript/initscript).
+17:34:41.633 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_initscript class cache for initialization script '/private/var/folders/cn/y6_hhyyn4s717jg8lqgdkc5m0000gp/T/ijinit1.gradle' (/Users/sowmyavi/.gradle/caches/2.0/scripts/ijinit1_27f3j9d46utuoi1f300g2q3uem/InitScript/no_initscript).
+17:34:41.634 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/sowmyavi/twu44proj4/build.gradle' (/Users/sowmyavi/.gradle/caches/2.0/scripts/build_1atiqh69316rup2t2b3tgn5h82/ProjectScript/buildscript).
+17:34:41.634 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/sowmyavi/twu44proj4/build.gradle' (/Users/sowmyavi/.gradle/caches/2.0/scripts/build_1atiqh69316rup2t2b3tgn5h82/ProjectScript/no_buildscript).
+17:34:41.638 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileSnapshots.bin (/Users/sowmyavi/twu44proj4/.gradle/2.0/taskArtifacts/fileSnapshots.bin)
+17:34:41.639 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache taskArtifacts.bin (/Users/sowmyavi/twu44proj4/.gradle/2.0/taskArtifacts/taskArtifacts.bin)
+17:34:41.640 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache outputFileStates.bin (/Users/sowmyavi/twu44proj4/.gradle/2.0/taskArtifacts/outputFileStates.bin)
+17:34:41.640 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/Users/sowmyavi/twu44proj4/.gradle/2.0/taskArtifacts/fileHashes.bin)
+17:34:41.641 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task history cache (/Users/sowmyavi/twu44proj4/.gradle/2.0/taskArtifacts).
+17:34:41.643 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 5, cache instances: 1, modules served from cache: 100, artifacts: 91
+17:34:41.646 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+17:34:41.649 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+17:34:41.649 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.004 secs
+17:34:41.650 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+17:34:41.651 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@3276f785]
+17:34:41.651 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: dispatching class org.gradle.launcher.daemon.protocol.Success
+17:34:41.656 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=aa767966-a57d-4621-a872-45d3947172c6.1, currentDir=/Users/sowmyavi/twu44proj4}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@56377813]
+17:34:41.657 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1436529881657
+17:34:41.658 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:34:41.658 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:34:41.660 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:34:41.660 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.Finished
+17:34:41.661 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:34:41.661 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@532d0784
+17:34:41.663 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received null
+17:34:41.664 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+17:34:41.668 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:34:41.669 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Fri Jul 10 20:34:41 IST 2015
+17:34:41.967 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=aa767966-a57d-4621-a872-45d3947172c6.1, currentDir=/Users/sowmyavi/twu44proj4}
+17:34:41.968 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+17:34:41.969 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: stopping connection
+17:34:41.970 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: stopping connection
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+21:50:52.517 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [69b2e614-76f2-40f4-9981-56e442279ef5 port:59329, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+21:50:52.526 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+21:50:52.727 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Could not lock information region for daemon addresses registry. Ignoring.
+21:50:52.729 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] The file lock is held by a different Gradle process. I was unable to read on which port the owner listens for lock access requests.
+21:50:52.931 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+21:50:52.936 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
